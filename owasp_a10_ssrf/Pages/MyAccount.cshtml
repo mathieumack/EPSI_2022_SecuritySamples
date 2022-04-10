@@ -1,0 +1,15 @@
+﻿@page
+@model MyAccountModel
+@{
+    ViewData["Title"] = "My account";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to update your profile account.</p>
+
+<form action="/index" method="post" asp-antiforgery="true">
+    Enter your name : <input name="Name" type="text"> </input> <br/>
+    Put your profile image url : <input name="ImageUrl" type="text"> </input> 
+    <br>
+    <input type="submit" value="Save">
+</form>
